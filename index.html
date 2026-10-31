@@ -64,7 +64,99 @@
     }
 
     @media screen and (min-width: 835px) and (max-width: 899px) {
+
       /* Hailey */
+      #div2 {
+        display: block;
+        position: fixed;
+
+        width: 200px;
+        height: 600px;
+        left: 50%;
+        top: 50%;
+        translate: -50% -50%;
+
+        border-radius: 50%;
+        rotate: calc(-2 * clamp(0, tan(atan2(100vw - 850px, 1px)), 45) * 1deg);
+        background-color: rgb(117, 214, 182);
+        transition: background-color 1s ease;
+        animation: divShrink 1s ease;
+      }
+      #div3 {
+        display: block;
+        position: fixed;
+
+        width: 200px;
+        height: 600px;
+        left: 50%;
+        top: 50%;
+        translate: -50% -50%;
+
+        border-radius: 50%;
+        rotate: calc(2 * clamp(0, tan(atan2(100vw - 850px, 1px)), 45) * 1deg);
+        background-color: rgb(117, 214, 182);
+        transition: background-color 1s ease;
+        animation: divShrink 1s ease;
+      }
+      #div4 {
+        display: block;
+        position: fixed;
+
+        width: 200px;
+        height: 600px;
+        left: 50%;
+        top: 50%;
+        translate: -50% -50%;
+
+        border-radius: 50%;
+        rotate: calc(-0.66 * clamp(0, tan(atan2(100vw - 850px, 1px)), 45) * 1deg);
+        background-color: rgb(117, 214, 182);
+        transition: background-color 1s ease;
+        animation: divShrink 1s ease;
+      }
+      #div5 {
+        display: block;
+        position: fixed;
+
+        width: 200px;
+        height: 600px;
+        left: 50%;
+        top: 50%;
+        translate: -50% -50%;
+
+        border-radius: 50%;
+        rotate: calc(0.66 * clamp(0, tan(atan2(100vw - 850px, 1px)), 45) * 1deg);
+        background-color: rgb(117, 214, 182);
+        transition: background-color 1s ease;
+        animation: divShrink 1s ease;
+      }
+      #div6 {
+        display: block;
+        position: fixed;
+
+        width: calc((100vw - 850px)*3);
+        height: calc((100vw - 850px)*3);
+        inset: 0;
+        margin: auto;
+        border-radius: 50%;
+        background-color: rgb(214, 214, 117);
+      }
+    }
+
+    @keyframes divShrink {
+      from{
+        width: 50vw;
+        height: 59vh;
+        left: 50%;
+        top: 50%;
+      }
+      to{
+        width: 200px;
+        height: 600px;
+        left: 50%;
+        top: 50%;
+        translate: -50% -50%;
+      }
     }
 
     @media screen and (min-width: 769px) and (max-width: 834px) {
