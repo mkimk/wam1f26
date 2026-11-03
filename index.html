@@ -61,6 +61,219 @@
 
     @media screen and (min-width: 900px) and (max-width: 964px) {
       /* Juan */
+       #div2 {
+        display: block;
+        position: fixed;
+
+        width: 150px;
+        height: 850px;
+        left: 50%;
+        top: 50%;
+        translate: -50% -50%;
+
+        border-radius: 20%;
+        rotate: calc(-4 * clamp(2, tan(atan2(100vw - 850px, 1px)), 45) * 2deg);
+        background-color: rgb(64, 64, 246);
+        transition: background-color 2s ease-in-out;
+        animation: divRotate 1s ease, boxpulsefirst 2s ease;
+      }
+      #div3 {
+        display: block;
+        position: fixed;
+
+        width: 150px;
+        height: 850px;
+        left: 50%;
+        top: 50%;
+        translate: -50% -50%;
+
+        border-radius: 15%;
+        rotate: 90deg;
+        background-color: rgb(64, 64, 246);
+        transition: background-color 2s ease-in-out;
+        animation: divRotate 1s ease, boxpulse 2s ease;
+      }
+      #div4 {
+        display: block;
+        position: fixed;
+
+        width: 200px;
+        height: 500px;
+        left: 50%;
+        top: 50%;
+        translate: -50% -50%;
+
+        border-radius: 20%;
+        rotate: calc(-0.66 * clamp(0, tan(atan2(100vw - 850px, 1px)), 45) * 1.5deg);
+        background-color: rgb(253, 255, 119);
+        transition: background-color 2s ease-in-out;
+        animation: divRotate 1s ease, boxpulse 2s ease, boxleft 2s ease-in-out;
+      }
+      #div5 {
+        display: block;
+        position: fixed;
+
+        width: 200px;
+        height: 500px;
+        left: 50%;
+        top: 50%;
+        translate: -50% -50%;
+
+        border-radius: 20%;
+        rotate: calc(0.66 * clamp(0, tan(atan2(100vw - 850px, 1px)), 45) * 1.5deg);
+        background-color: rgb(253, 255, 119);
+        transition: background-color 2s ease-in-out;
+        animation: divRotate 1s ease, boxpulse 2s ease, boxright 2s ease-in-out;
+      }
+      #div6 {
+        display: block;
+        position: fixed;
+
+        width: calc((100vw - 850px)*1);
+        height: calc((100vw - 850px)*1);
+        inset: 0;
+        margin: auto;
+        border-radius: 20%;
+        background-color: rgb(64, 64, 246);
+        transition: background-color 2s ease-in-out;
+        animation: centershrink 1s ease;
+      }
+    }
+
+    @keyframes divRotate {
+      0%{
+        width: 200px;
+        height: 600px;
+        left: 50%;
+        top: 50%;
+        translate: -50% -50%;
+      }
+      20%{
+        rotate: 180deg;
+        width: 100px;
+        height: 300px;
+        left: 0%;
+        top: 0%;
+        translate: 0%;
+      }
+      40%{
+        rotate: 360deg;
+        width: 50px;
+        height: 150px;
+        left:100%;
+        top:0%;
+        translate: 0%;
+        
+      }
+      60%{
+        rotate: 540deg;
+        width: 100px;
+        height: 300px;
+        left: 0%;
+        top: 80%;
+        translate:0%;
+        
+      }
+      80%{
+        rotate: 720deg;
+        width: 50px;
+        height: 150px;
+        left: 100%;
+        top: 80%;
+        translate: 0%;
+        
+      }
+      100%{
+        rotate: 1080deg;
+        width: 200px;
+        height: 600px;
+        left: 50%;
+        top: 50%;
+        translate: -50% -50%;
+        
+      }
+    }
+     @keyframes boxpulsefirst {
+      0%{
+        rotate: 90deg;
+      }
+      20%{
+        rotate: 180deg;
+      }
+      40%{
+        rotate: 270deg;
+      }
+      60%{
+        rotate: 360deg;
+      }
+      80%{
+        rotate: 450deg;
+      }
+      100%{
+        rotate: 720deg;
+      }
+    }
+    @keyframes boxpulse {
+      0%{
+        rotate: 90deg;
+      }
+      20%{
+        rotate: 180deg;
+      }
+      40%{
+        rotate: 270deg;
+      }
+      60%{
+        rotate: 360deg;
+      }
+      80%{
+        rotate: 450deg;
+      }
+      100%{
+        rotate: 630deg;
+      }
+    }
+    @keyframes centershrink {
+      0%{
+        scale:60%;
+      }
+      20%{
+        scale:80%;
+      }
+      40%{
+        scale:120%;
+      }
+      60%{
+        scale:100%;
+      }
+      80%{
+        scale:80%;
+      }
+      100%{
+        scale:60%;
+      }
+    }
+    @keyframes boxleft {
+      0%{
+        rotate:0deg;
+      }
+      50%{
+        rotate:0deg;
+      }
+      100%{
+        rotate:45deg;
+      }
+    }
+    @keyframes boxright {
+      0%{
+        rotate:0deg;
+      }
+      50%{
+        rotate:0deg;
+      }
+      100%{
+        rotate:-45deg;
+      }
     }
 
     @media screen and (min-width: 835px) and (max-width: 899px) {
