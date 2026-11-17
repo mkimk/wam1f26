@@ -48,7 +48,145 @@
     }
 
     @media screen and (min-width: 1095px) and (max-width: 1159px) {
-      /* Yolizabeth */
+      /* Yolizbeth */
+
+        body{
+        background-color: #82afdf;
+        transition: background-color 0.5s ease;
+      }
+
+        @keyframes stretchBody2{
+        0%{
+        }
+        100%{
+          transform: scaleX(2);
+          border-radius: 50%;
+          background-color: yellow;
+        }
+      }
+
+      @keyframes birdHeadAppear{
+       0%{
+          transform: scale(0.5);
+          opacity: 0%;
+        }
+        50%{
+          opacity: 0%;
+        }
+        100%{
+          transform: scale(1);
+          opacity: 100%;
+        }
+      }
+
+      @keyframes eyeReposition{
+        0%{
+          opacity: 0%;
+        }
+
+         50%{
+          opacity: 50%;
+        }
+
+        100%{
+          opacity: 100%;
+          top: 13vh;
+          left: 52vw;
+          z-index: 1;
+        }
+      }
+
+      @keyframes beakAppear{
+        0%{
+          opacity: 0%;
+        }
+        100%{
+          opacity: 100%;
+          top: -6vh;
+          left: 58.5vw;
+          z-index: 1;
+        }
+      }
+
+      @keyframes birdLegAppear{
+        0%{
+
+        }
+        100%{
+          
+        }
+      }
+
+      @keyframes wingAppear{
+        0%{
+
+        }
+        100%{
+          
+        }
+      }
+
+      #div2{
+        position:relative;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        top: 40vh;
+        left: 40vw;
+        transform: scaleX(2);
+        background-color: yellow;
+      }
+
+      #div3{
+        position: relative;
+        width: 0px;
+        height: 0px;
+        top:31vh;
+        left:28vw;
+        border-style: solid;
+        border-width: 20px 0 20px 100px;
+        border-color: transparent transparent transparent yellow;
+        transform: scale(1.5, 1.5);
+      }
+
+
+      #div4{
+        position: relative;
+        width: 30px;
+        height: 30px;
+        background-color: black;
+        border: 6px solid white;
+        border-radius: 50%;
+        opacity: 0%;
+
+        animation: eyeReposition 0.75s ease forwards;
+    
+      }
+      
+        #div7{
+        position:relative;
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        top: 4vh;
+        left: 48vw;
+        background-color: yellow;
+        opacity: 0%;
+
+        animation: birdHeadAppear 0.5s ease forwards;
+
+      }
+
+        #div8{
+        position:relative;
+        width: 0; 
+        height: 0; 
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;
+        border-left: 50px solid orange;
+
+        animation: beakAppear 0.5s ease forwards;
+        }
     }
 
     @media screen and (min-width: 1030px) and (max-width: 1094px) {
