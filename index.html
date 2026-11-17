@@ -45,7 +45,58 @@
 
     @media screen and (min-width: 1160px) and (max-width: 1224px) {
       /* Eva */
+
+        body {
+        background-color: #000000;
+        transition: background-color 1.4s ease;
+      }
+
+        #div2, #div3, #div4, #div5, #div6 {
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        top: 40vh;
+        left: 40vw;
+        background-color: rgb(17, 239, 255);
+        opacity: 0.37;
+
+        transform: scaleX(2);
+        transition: background-color 1.4s ease,
+        opacity 1.4s ease,
+        transform 1.4s ease;
+      }
+
+      #div2 {
+      animation: none;
+      }
+
+      #div3 {
+      animation: shuffle 2s ease-in-out infinite alternate-reverse;
+      }
+
+      #div4 {
+      animation: shuffle 2.5s ease-in-out infinite alternate;
+      }
+
+      #div5 {
+      animation: shuffle 1.8s ease-in-out infinite alternate-reverse;
+      }
+
+      #div6 {
+      animation: shuffle 2.2s ease-in-out infinite alternate;
+      }
+
+      @keyframes shuffle {
+      0% {
+      translate: -100px 0;
+      }
+
+      100% {
+      translate: 100px 0;
+      }
     }
+  }
 
     @media screen and (min-width: 1095px) and (max-width: 1159px) {
       /* Yolizbeth */
