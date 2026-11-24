@@ -33,6 +33,183 @@
 
     @media screen and (min-width: 1355px) and (max-width: 1419px) {
       /* Helen */
+      body {
+        background-color: #3f22ec;
+        --pink: #fa58a7;
+      }
+
+      #div1, #div2, #div3, #div4, #div5, #div7 {
+        position: absolute;
+        width: 128px;
+        height: 128px;
+        translate: calc(50vw - 64px) calc(50vh - 64px);
+        border-width: 0;
+        border-radius: 50%;
+        background-color: var(--pink);
+        opacity: 0;
+      }
+
+      /* top circle */
+      #div2 {
+        animation: div2 2s ease-in-out forwards 1s;
+        opacity: 1;
+      }
+
+      /* bottom circle */
+      #div3 {
+        animation: div3 2s ease-in-out forwards 1s;
+        opacity: 1;
+      }
+
+      /* right circle */
+      #div4 {
+        animation: div4 2s ease-in-out forwards 1s;
+        opacity: 1;
+      }
+
+      /* left circle */
+      #div5 {
+        animation: div5 2s ease-in-out forwards 1s;
+        opacity: 1;
+      }
+
+      /* center square */
+      #div8 {
+        position: absolute;
+        background-color: #dff700;
+        width: 0;
+        height: 0;
+        translate: calc(50vw) calc(50vh);
+        animation: div8 2s ease-in-out forwards 1s;
+      }
+
+      /* center square */
+      #div7 {
+        animation: shrink 2s ease-in-out forwards;
+      }
+
+      /* stem */
+      #div1 {
+        border-radius: 0;
+        background-color: #03e29d;
+        animation: div1 2s ease-in-out forwards;
+        opacity: 1;
+      }
+
+      @keyframes div1 {
+        0% {
+          width: 12px;
+          height: 0px;
+          translate: calc(50vw - 6px) 50vh;
+          border-radius: 0%;
+        }
+        100% {
+          width: 12px;
+          height: 50vh;
+          translate: calc(50vw - 6px) 50vh;
+          border-radius: 0%;
+          opacity: 1;
+        }
+      }
+
+      @keyframes div8 {
+        0% {
+          width: 0;
+          height: 0;
+          translate: calc(50vw) calc(50vh);
+        }
+        50% {
+          width: 64px;
+          height: 64px;
+          translate: calc(50vw - 32px) calc(50vh - 32px);
+          rotate: 0deg;
+        }
+        100% {
+          width: 64px;
+          height: 64px;
+          translate: calc(50vw - 32px) calc(50vh - 32px);
+          rotate: 90deg;
+        }
+      }
+
+      @keyframes div2 {
+        0% {
+          translate: calc(50vw - 64px) calc(50vh - 64px);
+        }
+        50% {
+          translate: calc(50vw - 128px) calc(50vh - 64px);
+        }
+        100% {
+          translate: calc(50vw - 64px) calc(50vh - 128px);
+        }
+      }
+
+      @keyframes div3 {
+        0% {
+          translate: calc(50vw - 64px) calc(50vh - 64px);
+        }
+        50% {
+          translate: calc(50vw) calc(50vh - 64px);
+        }
+        100% {
+          translate: calc(50vw - 64px) calc(50vh);
+        }
+      }
+
+      @keyframes div4 {
+        0% {
+          translate: calc(50vw - 64px) calc(50vh - 64px);
+        }
+        50% {
+          translate: calc(50vw - 64px) calc(50vh - 128px);
+        }
+        100% {
+          translate: calc(50vw) calc(50vh - 64px);
+        }
+      }
+
+      @keyframes div5 {
+        0% {
+          translate: calc(50vw - 64px) calc(50vh - 64px);
+        }
+        50% {
+          translate: calc(50vw - 64px) calc(50vh);
+        }
+        100% {
+          translate: calc(50vw - 128px) calc(50vh - 64px);
+        }
+      }
+
+
+      @keyframes shrink {
+        0% {
+          translate: 0 0;
+          width: 100vw;
+          height: 100vh;
+          border-width: 0;
+          border-radius: 0;
+          background-color: #0f0a2f;
+          opacity: 1;
+        }
+        50% {
+          translate: calc(50vw - 64px) calc(50vh - 64px);
+          width: 128px;
+          height: 128px;
+          border-width: 0;
+          border-radius: 0;
+          opacity: 1;
+          background-color: var(--pink);
+        }
+        100% {
+          translate: calc(50vw - 64px) calc(50vh - 64px);
+          width: 128px;
+          height: 128px;
+          border-width: 0;
+          border-radius: 50%;
+          opacity: 1;
+          background-color: var(--pink);
+        }
+      }
     }
 
     @media screen and (min-width: 1290px) and (max-width: 1354px) {
